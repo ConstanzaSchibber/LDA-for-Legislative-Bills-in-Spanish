@@ -41,6 +41,6 @@ for i in range(0, lda.num_topics - 1):
 doc_topic = gensim.matutils.corpus2dense(lda[corpus_full], num_terms=lda.num_topics, num_docs=corpus_full.num_docs)
 
 print 'ready to save'       
-numpy.savetxt('DocBYTOPICBrasil2_75Topics_sample.csv', doc_topic, fmt='%10.10f', delimiter=',')
+numpy.savetxt('DocBYTOPICArge_50Topics.csv', doc_topic, fmt='%10.10f', delimiter=',')
 print time.time() - start_time, "seconds"
 
